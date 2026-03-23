@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SofianeSniper - Space Invaders Clone</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="game-container">
+        <div id="ui-layer">
+            <div id="score-display">SCORE: <span id="score">0</span></div>
+            <div id="health-display">HEALTH: <span id="health">3</span></div>
+        </div>
+        
+        <canvas id="gameCanvas"></canvas>
+
+        <div id="start-screen" class="screen active">
+            <h1>SOFIANESNIPER</h1>
+            <p>Defend the galaxy from the alien invasion!</p>
+            <p class="controls">Controls: Left/Right Arrows to move, Space to shoot</p>
+            <button id="start-btn">Start Mission</button>
+        </div>
+
+        <div id="game-over-screen" class="screen">
+            <h1>MISSION FAILED</h1>
+            <p>Final Score: <span id="final-score">0</span></p>
+            <button id="restart-btn">Play Again</button>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
